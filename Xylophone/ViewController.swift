@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
 
 	@IBAction func keyPressed(_ sender: UIButton) {
-		playSound(soundName: "C", extensionName: "wav")
+		playSound(soundName: sender.currentTitle!, extensionName: "wav")
 	}
 	
 	func playSound(soundName: String, extensionName: String) {
